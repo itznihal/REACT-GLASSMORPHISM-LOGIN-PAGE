@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+padding: 0px;
+box-sizing: border-box;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+h1{
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.formcls{
   color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.btn{
+  color: white;
+  background-color: black;
+  padding: 1px;
+  border: 3px white solid;
+  border-radius: 13px;
+  font-size: 22px;
+
+}
+.hedbtn{
+  margin: 25%;
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.headingdec{
+
+background-color: whitesmoke;
+color: black;
+border: 5px whitesmoke solid;
+border-radius: 25px;
+display: block;
+width: 50%;
+text-align: center;
+margin: 25%;
+
 }
+
+
+form{
+
+display: flex;
+flex-direction: column;
+
+justify-content: center;
+align-items: center;
+height:400px;
+
+
+margin: auto;
+  width: 30%;
+  border: 3px solid lightpink;
+  padding: 10px;
+
+  margin-top: 15%;
+  background-color: lightpink;
+  border-radius: 15px;
+  box-shadow: 20px 20px 20px 20px rgb(255, 218, 224);
+}
+
+
+.div{
+display: flex;
+flex-direction:row ;
+margin-top: 15px;
+
+
+}
+
+button{
+
+background-color: cornflowerblue;
+margin: 30px;
+height: 35px;
+width: 80px;
+font-size: 22px;
+border-radius: 15px;
+}
+
+
+label{
+
+
+margin: 10px;
+font-size: 20px;
+
+
+}
+
+
+input{
+  margin: 10px;
+
+border: 2px whitesmoke solid;
+height: 30px;
+width: 200px;
+border-radius: 15px;
+font-size: 15px;
+padding: 2px;
+}
+
+.cmn{
+
+  margin-top: 15px;
+}
+
+
+.showDetails{
+  display: flex;
+  flex-direction:row;
+  margin: 15px;
+  border: 2px blue solid;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+  background-color: blue;
+
+}
+
+p{
+  margin-left: 25%;
+}
+
+
