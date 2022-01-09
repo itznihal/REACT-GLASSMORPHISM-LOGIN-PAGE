@@ -11,11 +11,17 @@ const [allEntry , setallEntry] = useState([]);
 const submitForm = (e) => {
     e.preventDefault();
 
-
-    const newEntry = { email:email , password:password };
+if(email && password){
+    const newEntry = { id: new Date().getTime().toString() ,  email:email , password:password };
+   
     setallEntry([...allEntry , newEntry]);
     console.log(allEntry);
-
+    setEmail("");
+    setPassword("");
+}
+else{
+    alert("Field is Empty");
+}
 
 }
 
@@ -42,10 +48,11 @@ const submitForm = (e) => {
           <div>
               {
                 allEntry.map( (currElem) => {
+                            const { id , email , password } = currElem;
                     return(
-                        <div className='showDetails'>
-                            <p>{currElem.email}</p>
-                            <p>{currElem.password}</p>
+                        <div className='showDetails' key={id}>
+                            <p>{email}</p>
+                            <p>{password}</p>
                         </div>
                     )
                 }
